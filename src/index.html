@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+   <!--En este div aarece la página de bienvenida y el botón empezar --> 
+    <div id="bienvenida">
+      <h1>Hola mundo!</h1>
+      <input id="empezar" type="button" value="Empezar">
+    </div>
+
+    <!--En este div aparece la introduccion del mensaje, los botones codificar decodificar y el apartado 
+    donde se selecciona el offset-->
+    <div id="box1" class="ocultar">
+      <textarea id="txt" placeholder="Ingresa tu mensaje" rows="10" cols="50"></textarea>
+      <!--apartado donde se selecciona el numero de lugares que se va a recorrer-->
+      <input id="opcion" type="number" min="0" max="34">
+      <!--Boton que cifra el texto-->
+      <input id="encode" type="button" value="codificar">
+      <!--Boton que descifra el texto--> 
+      <input id="decode" type="button" value="decodificar">
+
+    </div>
+
+    <!--En este div se muestra el mensaje cifrado y botón regresar-->
+    <div id="box2" class="ocultar">
+      <input id="back" type="button" value="regresar">
+
+    </div>
+
+    <!--En este div se muestra el mensaje descifrado y botón regresar-->
+    <div id="box3" class="ocultar">
+      <input id="back2" type="button" value="regresar">
+
+    </div>
+
+
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
