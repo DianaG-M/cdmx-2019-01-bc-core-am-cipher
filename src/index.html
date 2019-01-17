@@ -18,7 +18,7 @@
     <div id="box1" class="ocultar">
       <textarea id="txt" placeholder="Ingresa tu mensaje" rows="10" cols="50"></textarea>
       <!--apartado donde se selecciona el numero de lugares que se va a recorrer-->
-      <input id="opcion" type="number" min="0" max="34">
+      <input id="opcion" type="number" min="0" max="10">
       <!--Boton que cifra el texto-->
       <input id="encode" type="button" value="codificar">
       <!--Boton que descifra el texto--> 
@@ -28,12 +28,14 @@
 
     <!--En este div se muestra el mensaje cifrado y botón regresar-->
     <div id="box2" class="ocultar">
+        <p id="mensajecifrado"></p>
       <input id="back" type="button" value="regresar">
 
     </div>
 
     <!--En este div se muestra el mensaje descifrado y botón regresar-->
     <div id="box3" class="ocultar">
+        <p id="mensajedescifrado"></p>
       <input id="back2" type="button" value="regresar">
 
     </div>
