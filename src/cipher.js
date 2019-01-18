@@ -1,6 +1,3 @@
-
-
-
 window.cipher = {
   
   //Función que realiza cifrado cesar en el mensaje que ingresa el usuario
@@ -20,7 +17,6 @@ window.cipher = {
       let resultado = String.fromCharCode(formula);
       //Muestra el mensaje ya cifrado en forma de cadena
       nuevoCifrado+=resultado; // Hace que en texto cifrado aparezca en horizontal
-  
     }
     return nuevoCifrado;
   },

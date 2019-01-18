@@ -1,3 +1,103 @@
+/*Oculta las secciones que tienen esa clase*/
 .ocultar{
     display: none;
+}
+
+body{
+    text-align: center;
+}
+
+/*Da estilo al título*/
+h1{
+    font-size: 100px;
+}
+
+/*Da estilo a todos los botones que tienen esa clase*/
+.boton{
+    height: 80px;
+    width: 200px;
+    font-size: 38px;
+}
+
+/*Estilo del primer div*/
+#bienvenida{
+    color: azure;
+    background:linear-gradient(30deg, black, #023768, royalblue, #023768, black);
+    height: 550px;
+}
+
+/*Estilo del segundo div*/
+#box1{
+    background:-webkit-linear-gradient(top, black 10%, orangered 75%, yellow);
+    height: 550px;
+}
+
+/*Estilo del tercer div -> mostrar resultado cifrado*/
+#box2{
+    background:-webkit-radial-gradient(center center, circle, purple, crimson);
+    height: 550px;
+}
+
+/*Estilo del tercer div -> mostrar resultado cifrado*/
+#box3{
+    background:-webkit-radial-gradient(center center, circle, purple, crimson);
+    height: 550px;
+}
+
+
+
+/*Esrtilo del  boton codificar*/
+#encode{
+    position: absolute;
+    left: 20%;
+    top: 60%;
+}
+
+/*Estilo del boton decodificar*/
+#decode{
+    position: absolute;
+    top:60%;
+    right: 20%;
+}
+
+/*Estilo de la seleccion del offset*/
+#opcion{
+    font-size: 1cm;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    height: 40px;
+    width: 10%;
+}
+
+/*Estilo del text area*/
+#txt{
+    font-size: 2cm;
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    width: 20cm;
+}
+
+/*Estilo del mensaje cifrado*/
+#mensajecifrado{
+    background: bisque;
+    font-size: 2cm;
+    position: absolute;
+    left: 50%;
+}
+
+/*Estilo del boton regresar del mensaje cifrado*/
+#back {
+    position: absolute;
+    top: 60%;
+    left: 42%;
+}
+
+/*Estilo del boton regresar del mensaje descifrado*/
+#back2 {
+    position: absolute;
+    top: 60%;
+    left: 42%;
 }
