@@ -2,8 +2,10 @@
 
 
 window.cipher = {
+  
+  //Función que realiza cifrado cesar en el mensaje que ingresa el usuario
   encode : (offset,str) =>{
-    let nuevoCifrado = "";
+    let nuevoCifrado = ""; // Se utiliza para que salga la nueva cadena en horizontal
 
     let mayuscula = str.toUpperCase(); // convierte el mensaje a mayuscula   
     offset = Number(offset);//convierte el valor en string a entero
@@ -17,15 +19,15 @@ window.cipher = {
       //Conviente el cifrado en Ascii a Alfabeto
       let resultado = String.fromCharCode(formula);
       //Muestra el mensaje ya cifrado en forma de cadena
-      nuevoCifrado+=resultado;
+      nuevoCifrado+=resultado; // Hace que en texto cifrado aparezca en horizontal
   
     }
     return nuevoCifrado;
   },
   
+  //Funcion que realiza cifrado cesar inveso en el mensaje que ingresa el usuario
   decode : (offset,str) => {
-    let nuevodesCifrado = "";
-    
+    let nuevodesCifrado = ""; // Se utiliza para que salga la nueva cadena en horizontal
     let mayuscula = str.toUpperCase(); // convierte el mensaje a mayuscula
     offset = Number(offset);//convierte el valor en string a entero
     
@@ -38,8 +40,7 @@ window.cipher = {
       //Conviente el cifrado en Ascii a Alfabeto
       let resultado = String.fromCharCode(formula);
       //Muestra el mensaje ya cifrado en forma de cadena
-      nuevodesCifrado+=resultado;
-  
+      nuevodesCifrado+=resultado;// Hace que en texto cifrado aparezca en horizontal
     }
     return nuevodesCifrado;
   }

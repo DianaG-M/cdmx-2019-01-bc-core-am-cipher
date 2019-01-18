@@ -1,3 +1,4 @@
+//Declaracion de variables que obtienen los id de los div's del HTML
 const comenzar = document.getElementById("empezar");
 const cifrar = document.getElementById("encode");
 const descifrar = document.getElementById("decode");
@@ -30,10 +31,10 @@ cifrar.addEventListener("click", () => {
     
     box1.classList.add("ocultar");
     box2.classList.remove("ocultar");
-    const str = str1.value;
-    const offset = offset1.value;
-    const union = window.cipher.encode(offset,str);
-    document.getElementById("mensajecifrado").innerHTML = union;
+    const str = str1.value; //alamcena el valor del mensaje
+    const offset = offset1.value; // almacena el valor del offset elegido
+    const union = window.cipher.encode(offset,str); //almacena en la variabla la llamada de la funcion de JS
+    document.getElementById("mensajecifrado").innerHTML = union; // Pinta el mensaje que ya se cifro en el div cifrado del HTML
     
 });
 
@@ -42,10 +43,10 @@ y aparece la seccion box3*/
 descifrar.addEventListener("click", () => {
     box1.classList.add("ocultar");
     box3.classList.remove("ocultar");
-    const str = str1.value;
-    const offset = offset1.value;
-    const union = window.cipher.decode(offset,str);
-    document.getElementById("mensajedescifrado").innerHTML = union;
+    const str = str1.value; //alamcena el valor del mensaje
+    const offset = offset1.value; // almacena el valor del offset elegido
+    const union = window.cipher.decode(offset,str); //almacena en la variabla la llamada de la funcion de JS
+    document.getElementById("mensajedescifrado").innerHTML = union; // Pinta el mensaje que ya se descifro en el div cifrado del HTML
 });
 
 /*Funcion en ES6 que al momento de hacer click en el boton regersar oculta la seccion de box2
