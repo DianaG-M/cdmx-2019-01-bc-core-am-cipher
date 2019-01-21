@@ -88,6 +88,13 @@ h1{
     left: 50%;
 }
 
+#mensajedescifrado{
+    background: bisque;
+    font-size: 2cm;
+    position: absolute;
+    left: 50%;
+}
+
 /*Estilo del boton regresar del mensaje cifrado*/
 #back {
     position: absolute;

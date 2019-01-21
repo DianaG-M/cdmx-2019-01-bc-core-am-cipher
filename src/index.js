@@ -17,6 +17,12 @@ const str1 = document.getElementById("txt");
 //offset almancena el numero que el usuario elige
 const offset1 = document.getElementById("opcion");
 
+//Funcion para limpiar
+const limpiar = ()  => {
+    str1.value = "";
+    offset1.value = "";
+}
+
 /*Funcion en ES6 que al momento de hacer click en el boton empezar oculta la seccion de bienvenida 
 y aparece la seccion box1*/
 comenzar.addEventListener("click", () => {
@@ -52,6 +58,7 @@ descifrar.addEventListener("click", () => {
 /*Funcion en ES6 que al momento de hacer click en el boton regersar oculta la seccion de box2
 y aparece la seccion box1*/
 regresar.addEventListener("click", () => {
+    limpiar();
     box2.classList.add("ocultar");
     box1.classList.remove("ocultar");
 });
@@ -59,6 +66,7 @@ regresar.addEventListener("click", () => {
 /*Funcion en ES6 que al momento de hacer click en el boton regersar oculta la seccion de box3
 y aparece la seccion box1*/
 regresar2.addEventListener("click", () => {
+    limpiar();
     box3.classList.add("ocultar");
     box1.classList.remove("ocultar");
 });
