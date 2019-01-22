@@ -47,7 +47,7 @@ window.cipher = {
           //Muestra el mensaje ya cifrado en forma de cadena
           nuevodesCifrado+=resultado;// Hace que en texto cifrado aparezca en horizontal
         }else if(letraAscii >= 97 && letraAscii <= 122){
-          let formula = (letraAscii+97+offset)%26+97;
+          let formula = (letraAscii+111-offset)%26+97;
           let resultado = String.fromCharCode(formula);
           nuevodesCifrado+=resultado;
         }else{
