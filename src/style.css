@@ -4,12 +4,23 @@
 }
 
 body{
+    background-image: url("./images/img2.jpg");
+    background-size: 100%;
     text-align: center;
 }
 
 /*Da estilo al título*/
 h1{
+    background: #00183f8c;
     font-size: 100px;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+div p {
+    color: beige;
+    font-size: 50px;
+    background: #0000005e;
 }
 
 /*Da estilo a todos los botones que tienen esa clase*/
@@ -22,8 +33,10 @@ h1{
 /*Estilo del primer div*/
 #bienvenida{
     color: azure;
-    background:linear-gradient(30deg, black, #023768, royalblue, #023768, black);
-    height: 550px;
+    background:linear-gradient(30deg, #000000bb, #023768ca, #162d74b2, #023768ca, #000000bb);
+    height: 80%;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 /*Estilo del segundo div*/
