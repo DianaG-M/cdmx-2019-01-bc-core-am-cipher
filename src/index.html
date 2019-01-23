@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -19,9 +20,11 @@
     <!--En este div aparece la introduccion del mensaje, los botones codificar decodificar y el apartado 
     donde se selecciona el offset-->
     <div id="box1" class="ocultar">
-      <textarea id="txt" placeholder="Ingresa tu mensaje" rows="2" cols="60"></textarea>
+      <p class="msj">En la siguiente área ingresa el mensaje de tu elección y a continuación selecciona 
+        el offset (número de espacios que va a desplazarse) y si lo quieres cifrar o descifrar</p>
+      <textarea id="txt" placeholder="Ingresa tu mensaje" rows="2" cols="60"></textarea><br>
       <!--apartado donde se selecciona el numero de lugares que se va a recorrer-->
-      <input id="opcion" type="number" >
+      <input id="opcion" type="number" > <br><br><br><br>
       <!--Boton que cifra el texto-->
       <input id="encode" type="button" value="codificar" class="boton">
       <!--Boton que descifra el texto--> 
@@ -31,14 +34,20 @@
 
     <!--En este div se muestra el mensaje cifrado y botón regresar-->
     <div id="box2" class="ocultar">
-        <p id="mensajecifrado"></p>
+      <p class="msj">A continuación, podrás observar tu mensaje original y 
+        el mensaje cifrado.</p> <br>
+      <p id="mensajeoriginal" class="text"></p>
+      <p id="mensajecifrado" class="text"></p>
       <input id="back" type="button" value="regresar" class="boton">
 
     </div>
 
     <!--En este div se muestra el mensaje descifrado y botón regresar-->
     <div id="box3" class="ocultar">
-        <p id="mensajedescifrado"></p>
+      <p class="msj">A continuación, podrás observar tu mensaje original y 
+            el mensaje descifrado.</p> <br>
+      <p id="mensajeoriginal2" class="text"></p>
+      <p id="mensajedescifrado" class="text"></p>
       <input id="back2" type="button" value="regresar" class="boton">
 
     </div>

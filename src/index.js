@@ -41,7 +41,7 @@ cifrar.addEventListener("click", () => {
     const offset = offset1.value; // almacena el valor del offset elegido
     const union = window.cipher.encode(offset,str); //almacena en la variabla la llamada de la funcion de JS
     document.getElementById("mensajecifrado").innerHTML = union; // Pinta el mensaje que ya se cifro en el div cifrado del HTML
-    
+    document.getElementById("mensajeoriginal").innerHTML = str; //Pinta el mensaje original   
 });
 
 /*Funcion en ES6 que al momento de hacer click en el boton decodificar oculta la seccion de box1
@@ -53,6 +53,7 @@ descifrar.addEventListener("click", () => {
     const offset = offset1.value; // almacena el valor del offset elegido
     const union = window.cipher.decode(offset,str); //almacena en la variabla la llamada de la funcion de JS
     document.getElementById("mensajedescifrado").innerHTML = union; // Pinta el mensaje que ya se descifro en el div cifrado del HTML
+    document.getElementById("mensajeoriginal2").innerHTML = str;
 });
 
 /*Funcion en ES6 que al momento de hacer click en el boton regersar oculta la seccion de box2
