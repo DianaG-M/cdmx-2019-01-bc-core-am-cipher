@@ -5,6 +5,7 @@
 
 body{
     background-image: url("./images/img2.jpg");
+    background-repeat: repeat-y;
     background-size: 100%;
     text-align: center;
 }
