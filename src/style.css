@@ -5,7 +5,7 @@
 
 body{
     background-image: url("./images/img2.jpg");
-    background-repeat: repeat-y;
+
     background-size: 100%;
     text-align: center;
 }
@@ -35,7 +35,7 @@ div p {
     height: 80px;
     width: 200px;
     font-size: 38px;
-}
+
 
 /*Estilo del primer div*/
 #bienvenida{
@@ -63,14 +63,14 @@ div p {
 /*Esrtilo del  boton codificar*/
 #encode{
     position: absolute;
-    left: 20%;
+    /*left: 20%;/*
     
 }
 
 /*Estilo del boton decodificar*/
 #decode{
     position: absolute;
-    right: 20%;
+  /*  right: 20%;*/
 }
 
 /*Estilo de la seleccion del offset*/
