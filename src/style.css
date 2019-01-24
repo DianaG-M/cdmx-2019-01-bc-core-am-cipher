@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+
+
 /*Oculta las secciones que tienen esa clase*/
 .ocultar{
     display: none;
@@ -18,8 +23,9 @@ h1{
     margin-right: 6%;
 }
 
-/*Estilo de todos los div que contengan p*/
+/*Estilo de todos los p que esten dentro de un div*/
 div p {
+    font-family: 'Kalam', cursive;
     color: beige;
     font-size: 50px;
     background: #0000005e;
@@ -36,6 +42,7 @@ div p {
 /*Estilo de la lista ordenada*/
 ol{
     text-align: left;
+    font-family: 'Kalam', cursive;
     font-size: 40px;
     background: #681d0142;
     margin-left: 6%;
@@ -46,11 +53,12 @@ ol{
 .boton{
     height: 80px;
     width: 200px;
-    font-size: 30px;
+    font-size: 38px;
 }
 
 /*Estilo del primer div*/
 #bienvenida{
+    font-family: 'VT323', monospace;
     color: azure;
     background:linear-gradient(30deg, #000000bb, #023768ca, #162d74b2, #023768ca, #000000bb);
     height: 80%;
@@ -85,6 +93,7 @@ ol{
 
 /*Estilo del text area*/
 #txt{
+    text-align: center;
     font-size: 2cm;
     width: 20cm;
 }
@@ -98,24 +107,55 @@ ol{
     
 }
 
-#encode{
-    background-image: url("./images/encode.jpg");
+/*Estio de los botones regresar*/
+.botonesp{
     background-position-x: 50%;
+    background-position-y: 50%;
     background-repeat: no-repeat;
-    width:130px;
-    height:130px;
+    width:150px;
+    height:150px;
     border-radius: 90px;
+
 }
 
+/*Se coloca imagen de fonde en el botón codificar*/
+#encode{
+    background-image: url("./images/encode.png"); /*https://www.google.com/search?rlz=1C1CHBD_esMX798MX798&biw=1366&bih=618&tbm=isch&sa=1&ei=chZJXNDFIc_GsAXY-Za4Ag&q=candado+cerrado+png&oq=candado+cerrado+png&gs_l=img.3..0j0i8i30.217084.220876..221443...0.0..0.239.1948.0j14j2......1....1..gws-wiz-img.......0i7i30j0i67j0i8i7i30.iV0pBL1K6lc#imgrc=uRX3KuQejbEmkM:*/
+    background-size: 96%;
+}
+
+/*Se coloca imagen de fonde en el botón codificar*/
+#decode{
+    background-image: url("./images/decode.png");/*https://www.google.com/search?rlz=1C1CHBD_esMX798MX798&biw=1366&bih=618&tbm=isch&sa=1&ei=NwRJXPvPH-uXtgWhhoGIDQ&q=candado+abierto+png&oq=candado+abi&gs_l=img.3.1.0l4j0i67j0l5.29837.31746..33595...0.0..0.126.1115.0j10......0....1..gws-wiz-img.......0i5i30j35i39.vjoGRbX09jo#imgrc=TaYnNDSHZbM6pM:*/
+    background-size: 96%;
+}
+
+/*Estilo del título del botón*/
 button p{
     font-size: 25px;
-    background: #0c96d694;
+    background: #0c96d621;
     color: #000000;
 }
 
-encode:hover{
-    opacity: 1.0;
-  filter: alpha(opacity=100);
+/*Estilo del enlace*/
+a:hover{
+    font-size: 70px;
+    color: coral;
+}
+a:active{
+    color: blue;
+}
+a{
+    color:rgb(81, 255, 0);
+    font-family: 'Indie Flower', cursive;
+}
+
+/*Estilo del mensaje para ingresar el offset*/
+#off{
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+
 }
 
 
