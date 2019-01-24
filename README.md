@@ -1,7 +1,13 @@
 # CodePassword
+
+##Resumen del proyecto
 Esta página fue diseñada pensando en las personas a las cuales se les olvida su contraseña constantemente y siempre tienen que estar cambiandola.
 
 Con esta página los usuarios van a poder anotar su contraseña en algún lugar y no habrá ningún inconveniente si alguien llegará a encontrar en donde lo anoto; ya que la verdadera contraseña estara cifrada.
+
+![Fondo](src/image/fondo)
+
+
 
 
 

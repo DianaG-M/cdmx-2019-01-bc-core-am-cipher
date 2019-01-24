@@ -94,7 +94,8 @@ ol{
 /*Estilo del text area*/
 #txt{
     text-align: center;
-    font-size: 2cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-size: 1cm;
     width: 20cm;
 }
 
