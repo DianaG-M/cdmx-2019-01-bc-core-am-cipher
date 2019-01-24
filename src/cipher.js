@@ -25,7 +25,7 @@ window.cipher = {
           }
         
       }  
-    return nuevoCifrado
+    return nuevoCifrado + "." + offset;
   },
 
   
@@ -56,6 +56,6 @@ window.cipher = {
           }
         
       }  
-      return nuevodesCifrado
+      return nuevodesCifrado + "." + offset;
   }
 };

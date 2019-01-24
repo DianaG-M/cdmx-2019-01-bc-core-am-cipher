@@ -6,6 +6,7 @@
 body{
     background-image: url("./images/img2.jpg");
     background-size: 100%;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -17,13 +18,25 @@ h1{
     margin-right: 6%;
 }
 
+/*Estilo de todos los div que contengan p*/
 div p {
     color: beige;
     font-size: 50px;
     background: #0000005e;
 }
 
+/*Estilo unicamente del parrafo de cifrar/descifrar*/
 .msj{
+    background: #2c022c8f;
+    margin-top: 0px;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+/*Estilo de la lista ordenada*/
+ol{
+    text-align: left;
+    font-size: 40px;
     background: #681d0142;
     margin-left: 6%;
     margin-right: 6%;
@@ -33,7 +46,7 @@ div p {
 .boton{
     height: 80px;
     width: 200px;
-    font-size: 38px;
+    font-size: 30px;
 }
 
 /*Estilo del primer div*/
@@ -55,25 +68,14 @@ div p {
 
 /*Estilo del segundo y tercer div -> mostrar resultado cifrado/descifrado*/
 #box2, #box3{
-    background:-webkit-radial-gradient(center center, circle, #800080ca, #dc143cbb);
+    background:-webkit-radial-gradient(center center, circle, #80008098, #dc143c93);
+    padding-top: 6%;
     padding-bottom: 30px;
-}
-
-/*Esrtilo del  boton codificar*/
-#encode{
-    position: absolute;
-    left: 20%;
-    
-}
-
-/*Estilo del boton decodificar*/
-#decode{
-    position: absolute;
-    right: 20%;
 }
 
 /*Estilo de la seleccion del offset*/
 #opcion{
+    float: center;
     font-size: 1cm;
     text-align: center;
     left: 45%;
@@ -91,13 +93,29 @@ div p {
 .text{
     font-size: 2cm;
     text-align: center;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
     
 }
 
-/*Estilo del boton regresar*/
-#back, #back2 {
-    left: 42%;
+#encode{
+    background-image: url("./images/encode.jpg");
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    width:130px;
+    height:130px;
+    border-radius: 90px;
 }
+
+button p{
+    font-size: 25px;
+    background: #0c96d694;
+    color: #000000;
+}
+
+encode:hover{
+    opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
 

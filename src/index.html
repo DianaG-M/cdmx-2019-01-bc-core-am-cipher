@@ -10,7 +10,7 @@
 
    <!--En este div aarece la página de bienvenida y el botón empezar --> 
     <div id="bienvenida">
-      <h1>¡¡Bienvedid@ a CODE PASSWORD!!</h1>
+      <h1>¡¡Bienvenid@ a CODE PASSWORD!!</h1>
       <p>Aquí tu podrás cifrar tus contraseñas y de esta manera nunca más permitir que 
         alguien entre a tus sitios sin que tú lo autorices y jamás volverás a olvidar 
         ninguna contraseña.</p>
@@ -20,13 +20,18 @@
     <!--En este div aparece la introduccion del mensaje, los botones codificar decodificar y el apartado 
     donde se selecciona el offset-->
     <div id="box1" class="ocultar">
-      <p class="msj">En la siguiente área ingresa el mensaje de tu elección y a continuación selecciona 
-        el offset (número de espacios que va a desplazarse) y si lo quieres cifrar o descifrar</p>
+      <p>
+        <ol>
+          <li>Ingresa el mensaje de tu elección</li>
+          <li>Selecciona el número con el cuál vas a codificar (offset)</li>
+          <li>Elige si vas a codificar o decodificar</li>
+        </ol>
+      </p>
       <textarea id="txt" placeholder="Ingresa tu mensaje" rows="2" cols="60"></textarea><br>
       <!--apartado donde se selecciona el numero de lugares que se va a recorrer-->
-      <input id="opcion" type="number" > <br><br><br><br>
+      <p id="off">Aquí elige tu offset</p><input id="opcion" type="number" > <br><br><br><br>
       <!--Boton que cifra el texto-->
-      <input id="encode" type="button" value="codificar" class="boton">
+      <button id="encode" class="boton"><p><b>Codificar</b></p></button>
       <!--Boton que descifra el texto--> 
       <input id="decode" type="button" value="decodificar" class="boton">
 
@@ -35,7 +40,8 @@
     <!--En este div se muestra el mensaje cifrado y botón regresar-->
     <div id="box2" class="ocultar">
       <p class="msj">A continuación, podrás observar tu mensaje original y 
-        el mensaje cifrado.</p> <br>
+        el mensaje cifrado. Seguido de éste podrás tener el offset que 
+        elegiste por si en algún momento lo llegas a olvidar.</p> <br>
       <p id="mensajeoriginal" class="text"></p>
       <p id="mensajecifrado" class="text"></p>
       <input id="back" type="button" value="regresar" class="boton">
@@ -45,7 +51,8 @@
     <!--En este div se muestra el mensaje descifrado y botón regresar-->
     <div id="box3" class="ocultar">
       <p class="msj">A continuación, podrás observar tu mensaje original y 
-            el mensaje descifrado.</p> <br>
+            el mensaje descifrado. Seguido de éste podrás tener el offset que 
+            elegiste por si en algún momento lo llegas a olvidar.</p> <br>
       <p id="mensajeoriginal2" class="text"></p>
       <p id="mensajedescifrado" class="text"></p>
       <input id="back2" type="button" value="regresar" class="boton">
