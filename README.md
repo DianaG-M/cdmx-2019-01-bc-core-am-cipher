@@ -16,11 +16,13 @@
   3.  Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
       pruebas unitarias (unit tests) con el comando `npm run test`.
 
+
 ## Ejecutando las pruebas y descripción de las funciones
 
 - Para ejecutar las prebas del HTML podrás usar el comando: `npm run htmlhint`. Esto te ayudará a verificar que todos lo    elementos de tu HTML son correctos y no existe ninguna inconformidad en la estructura.
 - Para ejecutar las pruebas relacionadas con el js podrás usar el comando: `npm run eslin`. Esto te ayudará a que no        tengas ningún error en las funciones que tengas js, también ayudará a que tengas buenas prácticas porque te dirá si       tienes alguna variable declara y no esta siendo usada.
 - Por último con el comando `npm run test` podrás ejecutar todas las demás pruebas que dirán si lo que estas realizando     cumple con las expectaivas de proyecto y serán la guía para que sea eficiente y lo más claro posible.
+
 
 ## Pruebas de estilos de codificación
 
@@ -33,10 +35,12 @@ Este proyecto usa las siguientes dependencias:
 - nyc: "^13.1.0",
 - [opener](http://help.dottoro.com/ljauuavo.php): "^1.4.3"
 
+
 ## Deplayment
 
 Esta página esta abierta al público en las github pages con la siguiente ruta:
 [code](https://dianag-m.github.io/cdmx-2019-01-bc-core-am-cipher/src/index.html)
+
 
 ## Constitución
 
@@ -49,16 +53,34 @@ Esta página esta abierta al público en las github pages con la siguiente ruta:
 
 
 --------------------------------------------------------------------------------------------------------------------------
+
 # Resumen del proyecto
 Esta página fue diseñada pensando en las personas a las cuales se les olvida su contraseña constantemente y siempre tienen que estar cambiandola.
 
 Con esta página los usuarios van a poder anotar su contraseña en algún lugar y no habrá ningún inconveniente si alguien llegará a encontrar en donde lo anoto; ya que la verdadera contraseña estara cifrada.
 
+
+#### En esta página podemos observar la página de inicio en donde aparece el título, cuál es la finalidad de la página y como inicializar. 
 ![Pag1](src/images/2019-01-24.png)
 
 
+#### Al click en "empezar" nos dirige a la siguiente sección en donde encontramos las instrucciones de lo que se tiene que hacer para cifrar y descifrar el mensaje.
+![Pag2](src/images/2019-01-24(1).png)
 
 
+#### Al ingresar el mensaje y dar click en "codificar" nos redirige a la siguiente sección donde muestra el mensaje original y el mensaje cifrado.
+![Pag3](src/images/2019-01-24(2).png)
+
+#### Mientras que si le damos click en "decodificar" nos dirige a la sección en donde muestra el mensaje original y el mensaje descrifrado.
+![Pag4](src/images/2019-01-24(3).png)
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
@@ -348,8 +370,8 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 * [x] Interfaz muestra el resultado del descifrado correctamente.
 
 ### Parte Opcional: "Hacker edition"
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* [x] Cifra/descifra minúsculas
+* [x] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
+* [x] Permite usar un `offset` negativo.
 * [ ] Modelo de negocio.
 
