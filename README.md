@@ -65,14 +65,14 @@ Con esta página los usuarios van a poder anotar su contraseña en algún lugar 
 
 
 #### Al click en "empezar" nos dirige a la siguiente sección en donde encontramos las instrucciones de lo que se tiene que hacer para cifrar y descifrar el mensaje.
-![Pag2](src/images/2019-01-24(1).png)
+![Pag2](src/images/2019-01-24 (1).png)
 
 
 #### Al ingresar el mensaje y dar click en "codificar" nos redirige a la siguiente sección donde muestra el mensaje original y el mensaje cifrado.
-![Pag3](src/images/2019-01-24(2).png)
+![Pag3](src/images/2019-01-24 (2).png)
 
 #### Mientras que si le damos click en "decodificar" nos dirige a la sección en donde muestra el mensaje original y el mensaje descrifrado.
-![Pag4](src/images/2019-01-24(3).png)
+![Pag4](src/images/2019-01-24 (3).png)
 
 
 
