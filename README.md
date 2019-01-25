@@ -71,8 +71,12 @@ Con esta página los usuarios van a poder anotar su contraseña en algún lugar 
 #### Al ingresar el mensaje y dar click en "codificar" nos redirige a la siguiente sección donde muestra el mensaje original y el mensaje cifrado.
 ![Pag3](src/images/Pag3.png)
 
+
 #### Mientras que si le damos click en "decodificar" nos dirige a la sección en donde muestra el mensaje original y el mensaje descrifrado.
 ![Pag4](src/images/Pag4.png)
+
+
+Si quieres saber más acerca del las decisiones del diseño y porque fue que llegó a ese resultado. Te invito a visitar el siguiente link: [Ux](https://1drv.ms/f/s!AmkkKLbuChrBgp8-IrYrK-VM6TeD-A)
 
 
 
