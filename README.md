@@ -1,6 +1,55 @@
 # CodePassword
 
-##Resumen del proyecto
+##Instalación
+
+  1.  Para ejecutar los comandos a continuación necesitarás una :shell:
+      [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
+      que es un programita que interpreta líneas de comando (command-line
+      interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
+      instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
+      ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
+      también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
+      aunque recomendaría que consideres probar :penguin: GNU/Linux como tu Sistema Operativo.
+  2.  📦 Instala las dependencias del proyecto con el comando `npm
+      install`. Esto asume que has instalado [Node.js](https://nodejs.org/) (que
+      incluye [npm](https://docs.npmjs.com/)).
+  3.  Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
+      pruebas unitarias (unit tests) con el comando `npm run test`.
+
+##Ejecutando las pruebas y descripción de las funciones
+
+- Para ejecutar las prebas del HTML podrás usar el comando: `npm run htmlhint`. Esto te ayudará a verificar que todos lo    elementos de tu HTML son correctos y no existe ninguna inconformidad en la estructura.
+- Para ejecutar las pruebas relacionadas con el js podrás usar el comando: `npm run eslin`. Esto te ayudará a que no        tengas ningún error en las funciones que tengas js, también ayudará a que tengas buenas prácticas porque te dirá si       tienes alguna variable declara y no esta siendo usada.
+- Por último con el comando `npm run test` podrás ejecutar todas las demás pruebas que dirán si lo que estas realizando     cumple con las expectaivas de proyecto y serán la guía para que sea eficiente y lo más claro posible.
+
+##Pruebas de estilos de codificación
+
+Este proyecto usa las siguientes dependencias:
+
+- "[chai]" (https://www.chaijs.com/): "^4.1.2",
+- "[eslint]"(https://eslint.org/docs/about/): "^5.9.0",
+- "[htmlhint]"(https://www.npmjs.com/package/htmlhint): "^0.10.1",
+- "[mocha]" (https://mochajs.org/): "^5.1.1",
+- "nyc": "^13.1.0",
+- "[opener]" (http://help.dottoro.com/ljauuavo.php): "^1.4.3"
+
+##Deplayment
+
+Esta página esta abierta al público en las github pages con la siguiente ruta:
+[code](https://dianag-m.github.io/cdmx-2019-01-bc-core-am-cipher/src/index.html)
+
+##Constitución
+
+- Nombre: Code Password
+  Version: "1.0.0"
+  Main: "src/index.html"
+  License: "MIT"
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+#Resumen del proyecto
 Esta página fue diseñada pensando en las personas a las cuales se les olvida su contraseña constantemente y siempre tienen que estar cambiandola.
 
 Con esta página los usuarios van a poder anotar su contraseña en algún lugar y no habrá ningún inconveniente si alguien llegará a encontrar en donde lo anoto; ya que la verdadera contraseña estara cifrada.
@@ -8,10 +57,6 @@ Con esta página los usuarios van a poder anotar su contraseña en algún lugar 
 ![Fondo](src/images/inicio.jpg)
 
 
-
-
-
-s
 
 
 # Cifrado César

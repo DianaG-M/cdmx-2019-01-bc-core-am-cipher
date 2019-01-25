@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
 
-   <!--En este div aarece la página de bienvenida y el botón empezar --> 
-    <div id="bienvenida">
-      <h1>¡¡Bienvenid@ a CODE PASSWORD!!</h1>
-      <p>Aquí podrás cifrar y recordar tus contraseñas. <br> Así mismo, mantendrás 
-        tus sitios seguros con ayuda del <a href="https://mariapaniagua99.files.wordpress.com/2017/02/captura-de-pantalla-de-2017-02-07-105454.png">cifrado César</a> .
-      </p>
-      <input id="empezar" type="button" value="Empezar" class="boton">
-    </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!--En este div aparece la introduccion del mensaje, los botones codificar decodificar y el apartado 
+<body>
+
+  <!--En este div aarece la página de bienvenida y el botón empezar -->
+  <div id="bienvenida">
+    <h1>¡¡Bienvenid@ a CODE PASSWORD!!</h1>
+    <p>Aquí podrás cifrar y recordar tus contraseñas. <br> Así mismo, mantendrás
+      tus sitios seguros con ayuda del <a href="https://mariapaniagua99.files.wordpress.com/2017/02/captura-de-pantalla-de-2017-02-07-105454.png">cifrado
+        César</a> .
+    </p>
+    <input id="empezar" type="button" value="Empezar" class="boton">
+  </div>
+
+  <!--En este div aparece la introduccion del mensaje, los botones codificar decodificar y el apartado 
     donde se selecciona el offset-->
-    <div id="box1" class="ocultar">
-      <p>
-        <ol>
-          <li>Ingresa el mensaje de tu elección</li>
-          <li>Selecciona el número con el cuál vas a codificar/decodificar (offset)</li>
-          <li>Elige si vas a codificar o decodificar</li>
-        </ol>
-      </p>
-      <textarea id="txt" placeholder="Ingresa aquí tu mensaje" rows="2" cols="60"></textarea><br>
-      <!--apartado donde se selecciona el numero de lugares que se va a recorrer-->
-      <p id="off">Aquí elige tu offset</p><input id="opcion" type="number" > <br><br><br><br>
-      <!--Boton que cifra el texto-->
-      <button id="encode" class="botonesp"><p><b>Codificar</b></p></button>
-      <!--Boton que descifra el texto--> 
-      <button id="decode" class="botonesp"><p><b>Decodificar</b></p></button>
-      
-
-    </div>
-
-    <!--En este div se muestra el mensaje cifrado y botón regresar-->
-    <div id="box2" class="ocultar">
-      <p class="msj">A continuación, podrás observar tu mensaje original y 
-        el mensaje cifrado. Seguido de éste podrás tener el offset que 
-        elegiste por si en algún momento lo llegas a olvidar.</p> <br>
-      <p id="mensajeoriginal" class="text"></p>
-      <p id="mensajecifrado" class="text"></p>
-      <input id="back" type="button" value="regresar" class="boton">
-
-    </div>
-
-    <!--En este div se muestra el mensaje descifrado y botón regresar-->
-    <div id="box3" class="ocultar">
-      <p class="msj">A continuación, podrás observar tu mensaje original y 
-            el mensaje descifrado. Seguido de éste podrás tener el offset que 
-            elegiste por si en algún momento lo llegas a olvidar.</p> <br>
-      <p id="mensajeoriginal2" class="text"></p>
-      <p id="mensajedescifrado" class="text"></p>
-      <input id="back2" type="button" value="regresar" class="boton">
-
-    </div>
+  <div id="box1" class="ocultar">
+    <p>
+      <ol>
+        <li>Ingresa el mensaje de tu elección</li>
+        <li>Selecciona el número con el cuál vas a codificar/decodificar (offset)</li>
+        <li>Elige si vas a codificar o decodificar</li>
+      </ol>
+    </p>
+    <textarea id="txt" placeholder="Ingresa aquí tu mensaje" rows="2" cols="60"></textarea><br>
+    <!--apartado donde se selecciona el numero de lugares que se va a recorrer-->
+    <p id="off">Aquí elige tu offset</p><input id="opcion" type="number"> <br><br><br><br>
+    <!--Boton que cifra el texto-->
+    <button id="encode" class="botonesp">
+      <p><b>Codificar</b></p>
+    </button>
+    <!--Boton que descifra el texto-->
+    <button id="decode" class="botonesp">
+      <p><b>Decodificar</b></p>
+    </button>
 
 
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  </div>
+
+  <!--En este div se muestra el mensaje cifrado y botón regresar-->
+  <div id="box2" class="ocultar">
+    <p class="msj">A continuación, podrás observar tu mensaje original y
+      el mensaje cifrado.</p> <br>
+    <p id="mensajeoriginal" class="text"></p>
+    <p id="mensajecifrado" class="text"></p>
+    <input id="back" type="button" value="regresar" class="boton">
+
+  </div>
+
+  <!--En este div se muestra el mensaje descifrado y botón regresar-->
+  <div id="box3" class="ocultar">
+    <p class="msj">A continuación, podrás observar tu mensaje original y
+      el mensaje descifrado.</p> <br>
+    <p id="mensajeoriginal2" class="text"></p>
+    <p id="mensajedescifrado" class="text"></p>
+    <input id="back2" type="button" value="regresar" class="boton">
+
+  </div>
+
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
